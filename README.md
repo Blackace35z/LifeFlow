@@ -1,75 +1,98 @@
-# React + TypeScript + Vite
+# LifeFlow — Personal Life & Finance Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+LifeFlow is a personal productivity and finance dashboard built to help users organize their daily tasks, manage their budgets, and track progress toward their goals in one place.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Dashboard:** Get an overview of your tasks, budget, and goals.
+- **Daily Planner:** Create, organize, complete, and delete tasks. Set dates, times, categories, and priorities.
+- **Budget Tracker:** Record income and expenses and view monthly financial totals.
+- **Goal Tracking:** Create goals, set deadlines, and monitor progress.
+- **Dark & Light Themes:** Switch between themes based on your preference.
+- **Local Data Persistence:** Save app data in the browser using local storage.
+- **Responsive Interface:** Use a clean, modern layout designed for different screen sizes.
+- **Tunisian Dinar (TND):** Display financial amounts in TND.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- Vite
+- CSS
+- Browser Local Storage
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Follow these steps to run LifeFlow locally.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Install [Node.js](https://nodejs.org/) and npm.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Installation
 
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Blackace35z/lifeflow.git
+   ```
+
+2. Navigate into the project directory:
+
+   ```bash
+   cd lifeflow
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL printed in your terminal.
+
+### Production Build
+
+To check and build the app for production, run:
+
+```bash
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+To preview the production build locally, run:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm run preview
 ```
+
+## Data Storage
+
+LifeFlow currently uses browser local storage to persist app data. This means saved data is associated with the browser and device being used. The current project does not provide cloud synchronization or a shared account system.
+
+## Project Status
+
+LifeFlow is an ongoing personal project focused on productivity, budgeting, and goal management. Features and the interface may evolve as development continues.
+
+## Future Improvements
+
+Potential improvements include:
+
+- User accounts and cloud synchronization
+- Data export and import
+- More detailed spending analytics
+- Additional productivity insights
+- Deployment as a publicly accessible web app
+
+## Author
+
+**GitHub:** [Blackace35z](https://github.com/Blackace35z)
+
+## License
+
+No license has been specified yet. All rights are reserved by default unless a license is added to the repository.
