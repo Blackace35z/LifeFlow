@@ -13,6 +13,11 @@ LifeFlow is a personal productivity and finance dashboard built to help users or
 - **Responsive Interface:** Use a clean, modern layout designed for different screen sizes.
 - **Tunisian Dinar (TND):** Display financial amounts in TND.
 
+## Screenshots
+
+<!-- Add 2-3 screenshots to docs/screenshots/ and link them here, for example: -->
+<!-- ![Dashboard](docs/screenshots/dashboard.png) -->
+
 ## Tech Stack
 
 - React
@@ -34,13 +39,13 @@ Install [Node.js](https://nodejs.org/) and npm.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Blackace35z/lifeflow.git
+   git clone https://github.com/Blackace35z/LifeFlow.git
    ```
 
 2. Navigate into the project directory:
 
    ```bash
-   cd lifeflow
+   cd LifeFlow
    ```
 
 3. Install dependencies:
@@ -95,4 +100,4 @@ Potential improvements include:
 
 ## License
 
-No license has been specified yet. All rights are reserved by default unless a license is added to the repository.
+Released under the [MIT License](LICENSE).
